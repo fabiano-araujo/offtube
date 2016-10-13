@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="br.com.developer.fabiano.ytdownload.MainActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:theme="@style/theToobar"
+        android:layout_height="45dp">
+        <EditText
+            android:id="@+id/edtUrl"
+            android:layout_width="match_parent"
+            android:background="@drawable/button_primary"
+            android:textColor="@color/colorGray"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            android:textSize="15sp"
+            android:layout_marginRight="10dp"
+            android:layout_height="29dp" />
+    </android.support.v7.widget.Toolbar>
+    <WebView
+        android:layout_width="match_parent"
+        android:id="@+id/webView"
+        android:layout_height="match_parent">
+    </WebView>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:id="@+id/webView2"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+    </WebView>
+</LinearLayout>
